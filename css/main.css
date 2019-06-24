@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen:300,400,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #2C2F33;
+    font-size: 16px;
+    font-family: 'Oxygen';
+    font-weight: 400;
+}
+
+.registration-box {
+    background: #23272A;
+    width: 500px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.registration-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+}
+
+.form-title h3 {
+    font-weight: 400;
+    font-size: 26px;
+    text-align: center;
+    padding: 45px 0;
+    color: #fff;
+}
+
+.form-control label {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    font-size: 20px;
+    color: #b9bbbe;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.form-control input {
+    width: 400px;
+    height: 40px;
+    padding: 0 10px;
+    margin: 5px 0;
+    border: none;
+    outline-color: #7289DA;
+    border-radius: 3px;
+    background: #e8f0fe;
+    font-family: 'Oxygen', Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.form-control {
+    margin: 10px 0;
+}
+
+.form-submit button {
+    margin-top: 10px;
+    border: none;
+    width: 100%;
+    height: 40px;
+    font-family: 'Oxygen', Helvetica, sans-serif;
+    font-size: 16px;
+    border-radius: 3px;
+    background: #7289DA;
+    color: #fff;
+    transition: .2s all;
+    cursor: pointer;
+}
+
+.form-submit button:hover{
+    background: #677bc4;
+}
+
+.is-reg {
+    padding-top: 10px;
+}
+
+.is-reg a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    color: #7289DA;
+}
+
+.is-reg a:hover {
+    text-decoration: underline;
+}
